@@ -9,13 +9,13 @@ inout vssd1,
 `endif
 
 // Inputs
-input clk,
-input rst_n ,
-input enable ,
+input wire clk,
+input wire rst_n ,
+input wire enable ,
 // Outputs
-output [2:0] road1_out ,
-output [2:0] road2_out,
-output [5:0] io_oeb
+output wire [2:0] road1_out ,
+output wire [2:0] road2_out,
+output wire [5:0] io_oeb
 );
 
 
@@ -295,7 +295,6 @@ endcase
 end
 endmodule
 
-`default_nettype wire
 
 
 
